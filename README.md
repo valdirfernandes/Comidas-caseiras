@@ -1,2 +1,1 @@
 # Comidas-caseiras
-faculdade
