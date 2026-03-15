@@ -2,34 +2,26 @@
 <html lang="pt-br">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicias Caseiras</title>
 
     <link rel="stylesheet" href="estilos/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <link rel="icon" type="image/png" href="img/img-icon-logo.png">
-
-    <title>Delicias Caseiras</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
+    <div class="menu-overlay" id="menu-overlay"></div>
+
     <header class="header">
         <section>
-            <a href="#" class="logo">
+            <a href="#home" class="logo">
                 <img src="img/img-logo-pq.png" alt="Logo Delicias Caseiras">
             </a>
-
-            <div class="menu-toggle" id="menu-toggle">
-                ☰
-            </div>
 
             <nav class="navbar" id="navbar">
                 <a href="#home">Home</a>
@@ -39,27 +31,36 @@
             </nav>
 
             <div class="icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <circle cx="11" cy="11" r="7" stroke="#81614b" stroke-width="2" />
-                    <path d="M20 20L16.65 16.65" stroke="#81614b" stroke-width="2" />
-                </svg>
+                <a href="#" aria-label="Pesquisar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="11" cy="11" r="7" stroke="#81614b" stroke-width="2" />
+                        <path d="M20 20L16.65 16.65" stroke="#81614b" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </a>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path d="M3 4H5L7.2 14H17.5L20 7H6.2" stroke="#81614b" stroke-width="2" />
-                    <circle cx="9" cy="18" r="1.5" fill="#81614b" />
-                    <circle cx="17" cy="18" r="1.5" fill="#81614b" />
-                </svg>
+                <a href="#" aria-label="Carrinho">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 4H5L7.2 14H17.5L20 7H6.2" stroke="#81614b" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <circle cx="9" cy="18" r="1.5" fill="#81614b" />
+                        <circle cx="17" cy="18" r="1.5" fill="#81614b" />
+                    </svg>
+                </a>
             </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="navbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </section>
     </header>
 
     <div class="home-container">
-
         <section id="home">
-
             <div class="content">
-
-                <h3>O VERDADEIRO SABOR DA COMIDA CASEIRA</h3>
+                <h3>O verdadeiro sabor da comida caseira</h3>
 
                 <p>
                     Aqui você encontra pratos preparados com carinho,
@@ -68,26 +69,20 @@
                 </p>
 
                 <a href="#" class="btn">Peça o seu agora</a>
-
             </div>
-
         </section>
-
     </div>
 
     <section class="about" id="about">
-
         <h2 class="title">Sobre <span>Nós</span></h2>
 
         <div class="row">
-
             <div class="container-image">
-                <img src="img/sobre-img.png">
+                <img src="img/sobre-img.png" alt="Imagem sobre nós">
             </div>
 
             <div class="about-text">
-
-                <h3>O QUE FAZ NOSSA COMIDA ESPECIAL</h3>
+                <h3>O que faz nossa comida especial</h3>
 
                 <p>
                     Nossa cozinha combina ingredientes frescos,
@@ -103,11 +98,8 @@
                 </p>
 
                 <a href="#" class="btn">Saiba mais</a>
-
             </div>
-
         </div>
-
     </section>
 
     <section class="menu" id="menu">
@@ -117,28 +109,28 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="img/img-caldi-mandioca-carne-seca.png">
+                <img src="img/img-caldi-mandioca-carne-seca.png" alt="">
                 <h3>Caldo de Mandioca com Carne Seca</h3>
                 <div class="price">R$ 35,00 <span>R$45</span></div>
                 <a href="#" class="btn">Adicionar ao carrinho</a>
             </div>
 
             <div class="box">
-                <img src="img/img-caldo-mandioca-calabresa.png">
+                <img src="img/img-caldo-mandioca-calabresa.png" alt="">
                 <h3>Caldo de Mandioca com Calabresa</h3>
                 <div class="price">R$ 35,00 <span>R$45</span></div>
                 <a href="#" class="btn">Adicionar ao carrinho</a>
             </div>
 
             <div class="box">
-                <img src="img/img-feijoada.png">
+                <img src="img/img-feijoada.png" alt="">
                 <h3>Feijoada</h3>
                 <div class="price">R$ 35,00 <span>R$45</span></div>
                 <a href="#" class="btn">Adicionar ao carrinho</a>
             </div>
 
             <div class="box">
-                <img src="img/img-nhoque-carne.png">
+                <img src="img/img-nhoque-carne.png" alt="">
                 <h3>Nhoque com Carne</h3>
                 <div class="price">R$ 35,00 <span>R$45</span></div>
                 <a href="#" class="btn">Adicionar ao carrinho</a>
@@ -146,11 +138,18 @@
 
         </div>
 
+        <div class="menu-aviso">
+            <p>
+                <strong>Imagens meramente ilustrativas.</strong>
+                Os pratos podem variar conforme o cardápio do dia e disponibilidade da casa.
+            </p>
+        </div>
+
     </section>
 
     <footer class="footer" id="contact">
         <div class="footer-content">
-            <a href="#home"><img src="img/img-logo-pq.png" alt="Logo Delicias Caseiras" class="footer-logo"></a>
+            <img src="img/img-logo-pq.png" alt="Logo Delicias Caseiras" class="footer-logo">
 
             <p class="footer-text">
                 Sabores que aquecem o coração e lembram o melhor da comida caseira.
@@ -187,7 +186,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
